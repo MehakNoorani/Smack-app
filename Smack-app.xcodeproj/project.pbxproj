@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F5173ED8AD853D3FCF80D86 /* Pods_Smack_app_Smack_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F56D152CFEF7D36C65A281D /* Pods_Smack_app_Smack_appUITests.framework */; };
-		586BBFC72E0C237E00E327BF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586BBFC62E0C237E00E327BF /* SWRevealViewController.m */; };
 		69BAD9B59F23A777BE0D4E10 /* Pods_Smack_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4F2E0FA71EC55E71CC9128 /* Pods_Smack_appTests.framework */; };
 		733495040EFBF8AAE6ACA564 /* Pods_Smack_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAD6FA760E1A1711C849166 /* Pods_Smack_app.framework */; };
 /* End PBXBuildFile section */
@@ -34,9 +33,6 @@
 		1D4F2E0FA71EC55E71CC9128 /* Pods_Smack_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F03A2105F4F07600AC2F54 /* Pods-Smack-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-app.debug.xcconfig"; path = "Target Support Files/Pods-Smack-app/Pods-Smack-app.debug.xcconfig"; sourceTree = "<group>"; };
 		4B48772C9831BF711F642180 /* Pods-Smack-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-appTests.release.xcconfig"; path = "Target Support Files/Pods-Smack-appTests/Pods-Smack-appTests.release.xcconfig"; sourceTree = "<group>"; };
-		586BBFC52E0C237E00E327BF /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		586BBFC62E0C237E00E327BF /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		586BBFC82E0C239600E327BF /* Smack-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-app-Bridging-Header.h"; sourceTree = "<group>"; };
 		58EE15892E0C104400CF6425 /* Smack-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EE159F2E0C104800CF6425 /* Smack-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EE15A92E0C104800CF6425 /* Smack-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,20 +113,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		586BBFC42E0C22DF00E327BF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				586BBFC52E0C237E00E327BF /* SWRevealViewController.h */,
-				586BBFC62E0C237E00E327BF /* SWRevealViewController.m */,
-				586BBFC82E0C239600E327BF /* Smack-app-Bridging-Header.h */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		58EE15802E0C104400CF6425 = {
 			isa = PBXGroup;
 			children = (
-				586BBFC42E0C22DF00E327BF /* Supporting Files */,
 				58EE158B2E0C104400CF6425 /* Smack-app */,
 				58EE15A22E0C104800CF6425 /* Smack-appTests */,
 				58EE15AC2E0C104800CF6425 /* Smack-appUITests */,
@@ -379,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586BBFC72E0C237E00E327BF /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Smack-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Smack-app-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smack-app/Supporting Files/Smack-app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Smack-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Smack-app-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smack-app/Supporting Files/Smack-app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
